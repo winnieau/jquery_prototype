@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>GitHub Profiles</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <h3>Please enter a Github users username to pull their information</h3>
+    <div>
+      <input type="text" id="username" placeholder="Enter GitHub username">
+      <button id="button">Submit</button>
+    </div>
+
+    <div id="display">
+
+    </div>
+
+    <template>
+      <div class="profile">
+        <span class="pic">
+          <img src={{avatar_url}}>
+        </span>
+
+        <span class="stats">
+          <a href={{html_url}}>{{login}}</a>
+
+          Repos: {{public_repos}}
+          Followers: {{followers}}
+
+        </span>
+      </div>
+    </template>
+
+    <script src="js/jq_github.js"></script>
+
+  </body>
+</html>
