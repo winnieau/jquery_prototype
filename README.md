@@ -1,1 +1,1 @@
-Jquery version of github profiles
+Jquery version of GitHub profiles
